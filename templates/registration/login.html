@@ -1,0 +1,83 @@
+{#{% extends "registration/base_login.html" %}#}
+{% extends "base_generic.html" %}
+
+{% block section %}
+     <form method="post" action="{% url 'login' %}">
+        <label>Helllo</label>
+        <input type="text" name="{{ form.username.name }}">
+        <br>
+        <input type = "submit" class = "btn btn-primary" value = "  Login  ">
+    </form>
+{% endblock %}
+
+{% block content %}
+
+    <style xmlns="http://www.w3.org/1999/html">
+        .plane {
+            padding-top: 20px;
+            {#background: #1c7430;#}
+            align-items: center;
+            padding-left: 170px;
+            padding-right: 170px;
+        }
+
+    .planee {
+            padding-bottom: 30px;
+            font-size: 18px;
+            font-family: "Roboto";
+        }
+    </style>
+
+{#    <div class="form-control">#}
+
+{#        <h2>Enter Your Username And Password To Login</h2>#}
+      {% if form.errors %}
+      <p>Your username and password didn't match. Please try again.</p>
+    {% endif %}
+
+    {% if next %}
+      {% if user.is_authenticated %}
+        <p>Your account doesn't have access to this page. To proceed,
+        please login with an account that has access.</p>
+      {% else %}
+        <p>Please login to see this page.</p>
+      {% endif %}
+    {% endif %}
+
+{#    <div class="plane-container">#}
+    <h1>Welcome To Local Library</h1>
+{#    <div class="form-group">#}
+        <form method="post" action="{% url 'login' %}">
+{#        {% csrf_token %}#}
+            <div class="form-group plane">
+                <table class="">
+
+                <tr class="planee">
+                  <td class="form-group">{{ form.username.label_tag }}</td>
+                  <td class="form-group">{{ form.username }}</td>
+                </tr>
+
+                <tr class="planee">
+                  <td class="form-group">{{ form.password.label_tag }}</td>
+                  <td class="form-group">{{ form.password }}</td>
+                </tr>
+                </table>
+            </div>
+            <input class="form-group bg-warning" type="submit" value="      Login      " />
+            <input class="form-control" type="hidden" name="next" value="{{ next }}" />
+        </form>
+{#    </div>#}
+
+    {# Assumes you setup the password_reset view in your URLconf #}
+    <p><a href="{% url 'index' %}">Lost password?</a></p>
+
+    <form method="post" action="{% url 'login' %}">
+        <label>Helllo</label>
+        <input type="text" name="{{ form.username.name }}">
+        <br>
+        <input type = "submit" class = "btn btn-primary" value = "  Login  ">
+    </form>
+{#</div>#}
+{% endblock %}
+
+

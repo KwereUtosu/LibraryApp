@@ -1,0 +1,60 @@
+{% extends "base_generic.html" %}
+
+{#{% block content %}#}
+{#  <h1>Local Library Home</h1>#}
+{#  <p>Welcome to LocalLibrary, a website developed by <em>Mozilla Developer Network</em>!</p>#}
+{#  <h2>Dynamic content</h2>#}
+{#  <p>The library has the following record counts:</p>#}
+{#  <ul>#}
+{#    <li><strong>Books:</strong> {{ num_books }}</li>#}
+{#    <li><strong>Copies:</strong> {{ num_instances }}</li>#}
+{#    <li><strong>Copies available:</strong> {{ num_instances_available }}</li>#}
+{#    <li><strong>Authors:</strong> {{ num_authors }}</li>#}
+{#  </ul>#}
+{#    <p>You have visited this page {{ num_visits }}{% if num_visits == 1 %} time{% else %} times{% endif %}.</p>#}
+{#{% endblock %}#}
+
+{% block header %}
+  <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">A Free Comprehensive Library For Everyone</span>
+    <span class="site-heading-lower">Library Home</span>
+  </h1>
+{% endblock %}
+
+{% block section %}
+    <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+          {% load static %}
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'img/intro.jpg' %}" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper">New Books</span>
+            <span class="section-heading-lower">Worth Reading</span>
+          </h2>
+          <p class="mb-3">Our Books are complied from all Parts of the world. Be sure to read one today!
+          </p>
+          <div class="intro-button mx-auto">
+            <a class="btn btn-primary btn-xl" href="#">Visit Us Today!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+{% block content %}
+    <h1>Welcome Home!</h1>
+  <h2>We hope You Have A Good Read</h2>
+  <ul>
+    <li><strong>Books :</strong> {{ num_books }}</li>
+    <li><strong>Copies :</strong> {{ num_instances }}</li>
+    <li><strong>Copies available :</strong> {{ num_instances_available }}</li>
+    <li><strong>Authors :</strong> {{ num_authors }}</li>
+  </ul>
+    <p>You have visited this page {{ num_visits }}{% if num_visits == 1 %} time{% else %} times{% endif %}.</p>
+{% endblock %}
+
+
+
+

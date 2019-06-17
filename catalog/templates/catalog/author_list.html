@@ -1,0 +1,23 @@
+{% extends "base_generic.html" %}
+
+{% block header %}
+  <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">World Class Authors From Arround The Globe</span>
+    <span class="site-heading-lower">Library Authors</span>
+  </h1>
+{% endblock %}
+
+{% block content %}
+  <h1>List Of Authors</h1>
+  {% if author_list %}
+  <ul>
+    {% for author in author_list %}
+      <li>
+        <a href="{{ author.get_absolute_url }}">{{ author.first_name }}</a> ({{author.last_name}})
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>There are no Authors in the library.</p>
+  {% endif %}
+{% endblock %}
