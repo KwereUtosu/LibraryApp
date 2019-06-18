@@ -1,0 +1,20 @@
+{% extends "base_generic.html" %}
+
+{% block header %}
+  <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">The Store For Affordable Library Books</span>
+    <span class="site-heading-lower">Book Store</span>
+  </h1>
+{% endblock %}
+
+{% block content %}
+  <h1>The Official Book Store</h1>
+    <h2>These are the items in our book store</h2>
+  <ul style="list-style: none">
+    <li><strong>Books :</strong> {{ num_books }}</li>
+    <li><strong>Copies :</strong> {{ num_instances }}</li>
+    <li><strong>Copies available :</strong> {{ num_instances_available }}</li>
+    <li><strong>Authors :</strong> {{ num_authors }}</li>
+  </ul>
+    <p>You have visited this Library {{ num_visits }}{% if num_visits == 1 %} time{% else %} times{% endif %}. Thank You!</p>
+{% endblock %}

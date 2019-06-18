@@ -10,7 +10,7 @@
 {% block content %}
   <h1>List Of Books</h1>
   {% if book_list %}
-  <ul>
+  <ul style="list-style: none">
     {% for book in book_list %}
       <li>
         <a href="{{ book.get_absolute_url }}">{{ book.title }}</a> ({{book.author}})
@@ -19,5 +19,5 @@
   </ul>
   {% else %}
     <p>There are no books in the library.</p>
-  {% endif %}       
+  {% endif %}
 {% endblock %}

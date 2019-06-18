@@ -1,29 +1,16 @@
-{#{% extends "registration/base_login.html" %}#}
-{% extends "base_generic.html" %}
+{% extends "registration/base_login.html" %}
 
-{% block section %}
-     <form method="post" action="{% url 'login' %}">
-        <label>Helllo</label>
-        <input type="text" name="{{ form.username.name }}">
-        <br>
-        <input type = "submit" class = "btn btn-primary" value = "  Login  ">
-    </form>
-{% endblock %}
 
 {% block content %}
 
     <style xmlns="http://www.w3.org/1999/html">
         .plane {
-            padding-top: 20px;
-            {#background: #1c7430;#}
-            align-items: center;
-            padding-left: 170px;
-            padding-right: 170px;
+            margin-top: 10px;
         }
 
     .planee {
-            padding-bottom: 30px;
-            font-size: 18px;
+            margin-bottom: 20px;
+            font-size: 17px;
             font-family: "Roboto";
         }
     </style>
@@ -44,39 +31,33 @@
       {% endif %}
     {% endif %}
 
-{#    <div class="plane-container">#}
     <h1>Welcome To Local Library</h1>
-{#    <div class="form-group">#}
         <form method="post" action="{% url 'login' %}">
-{#        {% csrf_token %}#}
-            <div class="form-group plane">
-                <table class="">
+        {% csrf_token %}
+            <div class="form-group">
 
-                <tr class="planee">
-                  <td class="form-group">{{ form.username.label_tag }}</td>
-                  <td class="form-group">{{ form.username }}</td>
-                </tr>
+                <br>
+                <label class="planee">Username: </label>
+                <td class="form-group">{{ form.username }}</td>
+{#                <input class="planee" type="text" name="{{ form.username.name }}">#}
+                <br>
 
-                <tr class="planee">
-                  <td class="form-group">{{ form.password.label_tag }}</td>
-                  <td class="form-group">{{ form.password }}</td>
-                </tr>
-                </table>
+                <label class="planee">Password: </label>
+{#                <input class="planee" type="text" name="{{ form.password }}" >#}
+                <td>{{ form.password }}</td>
+                <br>
+
+                <input type = "submit" class = "btn btn-primary" value = "  Login  ">
+                <input class="form-control" type="hidden" name="next" value="{{ next }}" />
+
             </div>
-            <input class="form-group bg-warning" type="submit" value="      Login      " />
-            <input class="form-control" type="hidden" name="next" value="{{ next }}" />
+{#            <input class="form-group bg-warning" type="submit" value="      Login      " />#}
         </form>
 {#    </div>#}
 
     {# Assumes you setup the password_reset view in your URLconf #}
     <p><a href="{% url 'index' %}">Lost password?</a></p>
 
-    <form method="post" action="{% url 'login' %}">
-        <label>Helllo</label>
-        <input type="text" name="{{ form.username.name }}">
-        <br>
-        <input type = "submit" class = "btn btn-primary" value = "  Login  ">
-    </form>
 {#</div>#}
 {% endblock %}
 

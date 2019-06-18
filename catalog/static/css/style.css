@@ -11,3 +11,7 @@
     background: #491217;
     font-size: medium;
 }
+
+.listbots{
+    list-style: none;
+}

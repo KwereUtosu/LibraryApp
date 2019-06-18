@@ -1,0 +1,75 @@
+{% extends "registration/base_login.html" %}
+
+{% block header %}
+  <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">Books, Files and more are avaliable</span>
+    <span class="site-heading-lower">Upload Books</span>
+  </h1>
+{% endblock %}
+
+{% block section %}
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Reading</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'index' %}">Home
+{#              <span class="sr-only">(current)</span>#}
+            </a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'books' %}">Books</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'authors' %}">Authors</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'upload' %}">Book Upload</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+
+    <style xmlns="http://www.w3.org/1999/html">
+        .plane {
+            margin-top: 10px;
+        }
+
+    .planee {
+            margin-bottom: 20px;
+            font-size: 17px;
+            font-family: "Roboto";
+        }
+    </style>
+
+      {% if form.errors %}
+      <p>Book Upload Failed. Please try again.</p>
+        {% endif %}
+
+    <h1>Upload A Book</h1>
+    <h2>Book Can Either Be A Pdf, Txt, Doc or An Audio mp3 File</h2>
+     <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="myfile">
+        <br>
+        <input type="submit" name="upload">
+    </form>
+
+     {% if uploaded_file_url %}
+    <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
+    {% endif %}
+
+    <p><a href="{% url 'index' %}">Lost password?</a></p>
+
+{#</div>#}
+{% endblock %}
+
+

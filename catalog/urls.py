@@ -9,5 +9,7 @@ urlpatterns = [
     path('authors/', views.AuthorListView.as_view(), name='authors'),
     path('authors/<int:pk>', views.AuthorDetailView.as_view(), name='author-detail'),
     path('book/<uuid:pk>/renew/', views.renew_book_librarian, name='renew-book-librarian'),
+    path('store/', views.store, name='store'),
+    path('books/upload', views.book_upload, name='upload')
 # re_path(r'^book/(?P<pk>\d+)$', views.BookDetailView.as_view(), name='book-detail'),
 ]

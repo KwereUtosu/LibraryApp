@@ -84,3 +84,13 @@ class Author(models.Model):
         """String for representing the Model object."""
         return f'{self.last_name}, {self.first_name}'
 
+
+class BookUpload(models.Model):
+    description = models.CharField(max_length=255, blank=True)
+    document = models.FileField(upload_to='documents/')
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+    # file = models.BinaryField()
+    # filepath = models.CharField(max_length=1000)
+
+
+

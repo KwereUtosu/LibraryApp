@@ -1,6 +1,7 @@
 import datetime
 
 from django import forms
+from .models import BookUpload
 from django.core.exceptions import ValidationError
 from django.utils.translation import ugettext_lazy as _
 
@@ -21,3 +22,13 @@ class RenewBookForm(forms.Form):
 
         # Remember to always return the cleaned data.
         return data
+
+
+class UploadFileForm(forms.Form):
+    title = forms.CharField(max_length=50, help_text="Please select a file to be uploaded")
+    file = forms.FileField()
+
+class BookUploadForm(forms.ModelForm):
+    class Meta:
+        model = BookUpload
+        fields = ('description', 'document', )

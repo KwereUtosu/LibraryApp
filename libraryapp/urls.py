@@ -50,6 +50,9 @@ urlpatterns += [
     # path('accounts/login/', include('django.contrib.auth.urls'), name='login')
 ]
 
-urlpatterns += [
-    url(r'^login/$', auth_views.LoginView.as_view, name='login'),
-]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# urlpatterns += [
+#     url(r'^login/$', auth_views.LoginView.as_view, name='login'),
+# ]
