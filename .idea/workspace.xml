@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="501588c0-3542-472e-90e9-57092d8ce6f7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="501588c0-3542-472e-90e9-57092d8ce6f7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/libraryapp/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" selection-end-column="60" />
               <folding>
                 <element signature="e#226#235#0" expanded="true" />
               </folding>
@@ -210,41 +208,7 @@
             <path>
               <item name="libraryapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="libraryapp" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="libraryapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="libraryapp" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="libraryapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="libraryapp" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="libraryapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="libraryapp" type="462c0819:PsiDirectoryNode" />
-              <item name="libraryapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="libraryapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="libraryapp" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="libraryapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="libraryapp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="libraryapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="libraryapp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="registration" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -325,7 +289,7 @@
       <workItem from="1560753348359" duration="27862000" />
       <workItem from="1560930094457" duration="573000" />
       <workItem from="1561360556900" duration="2653000" />
-      <workItem from="1561455859309" duration="1854000" />
+      <workItem from="1561455859309" duration="2757000" />
     </task>
     <servers />
   </component>
@@ -344,18 +308,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79122000" />
+    <option name="totallyTimeSpent" value="80025000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25945538" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.400982" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.400982" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -364,7 +327,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="manage.py@libraryapp" order="9" weight="0.42389524" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.20294599" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.64320785" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -619,8 +582,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/libraryapp/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" selection-end-column="60" />
           <folding>
             <element signature="e#226#235#0" expanded="true" />
           </folding>
