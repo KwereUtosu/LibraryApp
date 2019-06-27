@@ -3,7 +3,7 @@ from catalog.models import Book, Author, BookInstance, Genre, BookUpload
 from django.views import generic
 from django.shortcuts import get_object_or_404
 import datetime
-from django.contrib.auth.decorators import permission_required
+from django.contrib.auth.decorators import permission_required, login_required
 from django.core.files.storage import FileSystemStorage
 
 from .forms import UploadFileForm
@@ -15,7 +15,7 @@ from catalog.forms import RenewBookForm
 
 # Create your views here.
 
-
+@login_required
 def index(request):
     """View function for home page of site."""
 
