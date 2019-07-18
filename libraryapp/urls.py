@@ -19,23 +19,9 @@ from django.urls import path
 from django.views.generic import RedirectView
 from django.conf import settings
 from django.conf.urls.static import static
+from catalog import views as core_views
 from django.contrib.auth import views as auth_views
 from django.conf.urls import url
-
-# urlpatterns = [
-#     path('admin/', admin.site.urls),
-# ]
-#
-# urlpatterns += [
-#     path('catalog/', include('catalog.urls')),
-# ]
-#
-#
-# urlpatterns += [
-#     path('', RedirectView.as_view(url='/catalog/', permanent=True)),
-# ]
-#
-# urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 
 urlpatterns = [
@@ -47,7 +33,10 @@ urlpatterns = [
 
 urlpatterns += [
     path('accounts/', include('django.contrib.auth.urls')),
-    # path('accounts/login/', include('django.contrib.auth.urls'), name='login')
+]
+
+urlpatterns += [
+    path('signup', core_views.setup, name='setup'),
 ]
 
 if settings.DEBUG:

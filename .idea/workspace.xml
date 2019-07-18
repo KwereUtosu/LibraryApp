@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="501588c0-3542-472e-90e9-57092d8ce6f7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/registration/setup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraryapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraryapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,23 +36,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/urls.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="18" selection-start-line="5" selection-end-line="6" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="274">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
+        <entry file="file://$PROJECT_DIR$/templates/registration/setup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+            <state relative-caret-position="391">
+              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -67,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libraryapp/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1324">
-              <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -85,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
-              <caret lean-forward="true" />
+            <state relative-caret-position="2584">
+              <caret line="167" column="41" selection-start-line="167" selection-start-column="41" selection-end-line="167" selection-end-column="41" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -107,21 +106,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/templates/catalog/book_renew_librarian.html">
+        <entry file="file://$PROJECT_DIR$/libraryapp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="510">
+              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+              <folding>
+                <element signature="e#634#666#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libraryapp/urls.py">
+        <entry file="file://$PROJECT_DIR$/catalog/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-end-line="50" />
+            <state relative-caret-position="102">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding>
-                <element signature="e#634#666#0" expanded="true" />
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,7 +164,6 @@
         <option value="$PROJECT_DIR$/catalog/templates/catalog/author_list.html" />
         <option value="$PROJECT_DIR$/catalog/templates/catalog/store.html" />
         <option value="$PROJECT_DIR$/catalog/templates/index.html" />
-        <option value="$PROJECT_DIR$/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/catalog/tests.py" />
         <option value="$PROJECT_DIR$/catalog/tests/test_models.py" />
         <option value="$PROJECT_DIR$/catalog/tests/test_forms.py" />
@@ -177,6 +178,8 @@
         <option value="$PROJECT_DIR$/catalog/urls.py" />
         <option value="$PROJECT_DIR$/libraryapp/urls.py" />
         <option value="$PROJECT_DIR$/catalog/views.py" />
+        <option value="$PROJECT_DIR$/templates/registration/setup.html" />
+        <option value="$PROJECT_DIR$/templates/registration/login.html" />
       </list>
     </option>
   </component>
@@ -192,7 +195,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,12 +206,6 @@
               <item name="libraryapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="libraryapp" type="462c0819:PsiDirectoryNode" />
               <item name="catalog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="libraryapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="libraryapp" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="libraryapp" type="b2602c69:ProjectViewProjectNode" />
@@ -231,6 +227,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -307,7 +304,15 @@
       <workItem from="1560930094457" duration="573000" />
       <workItem from="1561360556900" duration="2653000" />
       <workItem from="1561455859309" duration="5408000" />
-      <workItem from="1561623592966" duration="4382000" />
+      <workItem from="1561623592966" duration="5626000" />
+      <workItem from="1561968051398" duration="431000" />
+      <workItem from="1562385041500" duration="580000" />
+      <workItem from="1562639028752" duration="1505000" />
+      <workItem from="1562747923307" duration="589000" />
+      <workItem from="1562969903332" duration="588000" />
+      <workItem from="1563175761136" duration="584000" />
+      <workItem from="1563263642453" duration="4751000" />
+      <workItem from="1563418207543" duration="599000" />
     </task>
     <servers />
   </component>
@@ -326,13 +331,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87058000" />
+    <option name="totallyTimeSpent" value="97929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2632375" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26701966" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -346,7 +351,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="manage.py@libraryapp" order="9" weight="0.42389524" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32242227" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.21767594" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -527,10 +532,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraryapp/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/templates/catalog/book_renew_librarian.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/registration/setup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/catalog/templates/base_generic.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1904">
           <caret line="112" column="8" selection-start-line="87" selection-start-column="2" selection-end-line="112" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraryapp/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -544,6 +587,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2584">
+          <caret line="167" column="41" selection-start-line="167" selection-start-column="41" selection-end-line="167" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/registration/base_login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
@@ -551,63 +604,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/templates/catalog/book_renew_librarian.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libraryapp/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libraryapp/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1324">
-          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="18" selection-start-line="5" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libraryapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-end-line="50" />
+        <state relative-caret-position="510">
+          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
           <folding>
             <element signature="e#634#666#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/views.py">
+    <entry file="file://$PROJECT_DIR$/catalog/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret lean-forward="true" />
+        <state relative-caret-position="102">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

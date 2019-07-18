@@ -5,6 +5,9 @@ from django.shortcuts import get_object_or_404
 import datetime
 from django.contrib.auth.decorators import permission_required, login_required
 from django.core.files.storage import FileSystemStorage
+from django.contrib.auth import login, authenticate
+from django.contrib.auth.forms import UserCreationForm
+from django.shortcuts import render, redirect
 
 from .forms import UploadFileForm
 from django.http import HttpResponseRedirect
@@ -149,3 +152,20 @@ def model_form_upload(request):
         'form': form
     })
 
+def setup(request):
+    """View function for home page of site."""
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            raw_password = form.cleaned_data.get('password1')
+            user = authenticate(username=username, password=raw_password)
+            login(request, user)
+            return redirect('index')
+    else:
+        form = UserCreationForm()
+    return render(request, 'registration/setup.html', {'form': form})
+
+    # # Render the HTML templates index.html with the data in the context variable
+    # return render(request, 'setup.html', context=context)

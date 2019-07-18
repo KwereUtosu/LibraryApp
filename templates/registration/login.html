@@ -51,12 +51,12 @@
                 <input class="form-control" type="hidden" name="next" value="{{ next }}" />
 
             </div>
-{#            <input class="form-group bg-warning" type="submit" value="      Login      " />#}
         </form>
 {#    </div>#}
 
     {# Assumes you setup the password_reset view in your URLconf #}
-    <p><a href="{% url 'index' %}">Lost password?</a></p>
+{#    <p><a href="{% url 'index' %}">Lost password?</a></p>#}
+    <p><span>Do have an account? </span><a href="{% url 'setup' %}">Create an account</a></p>
 
 {#</div>#}
 {% endblock %}
