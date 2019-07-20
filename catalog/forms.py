@@ -24,11 +24,15 @@ class RenewBookForm(forms.Form):
         return data
 
 
-class UploadFileForm(forms.Form):
+class UploadFileForm(forms.ModelForm):
     title = forms.CharField(max_length=50, help_text="Please select a file to be uploaded")
     file = forms.FileField()
 
-class BookUploadForm(forms.ModelForm):
+class BookUploadModelForm(forms.ModelForm):
     class Meta:
         model = BookUpload
-        fields = ('description', 'document', )
+        fields = ('firstname','lastname','booktype','available','description','document','uploaded_at' )
+
+
+class BookUploadForm(forms.Form):
+    firstname = forms.CharField

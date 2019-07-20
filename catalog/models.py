@@ -86,6 +86,10 @@ class Author(models.Model):
 
 
 class BookUpload(models.Model):
+    firstname = models.CharField(max_length=200)
+    lastname = models.CharField(max_length=200)
+    booktype = models.TextField()
+    available = models.BooleanField(default=False)
     description = models.CharField(max_length=255, blank=True)
     document = models.FileField(upload_to='documents/')
     uploaded_at = models.DateTimeField(auto_now_add=True)
